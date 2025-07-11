@@ -66,6 +66,7 @@ show_header() {
     printf "%b\n" "${CYAN}╔══════════════════════════════════════════════════════════════╗${NC}"
     printf "%b\n" "${CYAN}║                    ${YELLOW}SCRCPY Manager${CYAN}                            ║${NC}"
     printf "%b\n" "${CYAN}║              ${GREEN}Conecte seu Android via WiFi no Mac${CYAN}             ║${NC}"
+    printf "%b\n" "${CYAN}║  ${RED}Para encerrar este script, pressione Ctrl + C no terminal.${CYAN}  ║${NC}"
     printf "%b\n" "${CYAN}╚══════════════════════════════════════════════════════════════╝${NC}"
     echo
 }
@@ -1994,5 +1995,8 @@ sleep 1
 
 # Iniciar menu principal
 main_menu
+
+# Garante que a mensagem seja exibida antes do encerramento do script
+trap 'echo -e "\033[1;31mPara encerrar o compartilhamento de tela, pressione Ctrl + C no terminal.\033[0m"' EXIT
 
 
