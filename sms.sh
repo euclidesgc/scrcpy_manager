@@ -1,14 +1,7 @@
-# Função para listar todos os dispositivos conectados
-list_devices() {
-    show_header
-    printf "%b\n" "${BLUE}📱 Dispositivos conectados:${NC}"
-    echo
-    adb devices -l
-    echo
-    printf "%b\n" "${YELLOW}Pressione Enter para voltar...${NC}"
-    read
-}
 #!/bin/bash
+
+# SCRCPY Manager
+# Este script facilita a conexão e o gerenciamento de dispositivos Android via scrcpy e adb.
 
 # Configurações e flags para debug
 DEBUG=true
@@ -71,7 +64,7 @@ check_scrcpy_version() {
 show_header() {
     clear
     printf "%b\n" "${CYAN}╔══════════════════════════════════════════════════════════════╗${NC}"
-    printf "%b\n" "${CYAN}║                    ${YELLOW}SCRCPY WiFi Manager${CYAN}                       ║${NC}"
+    printf "%b\n" "${CYAN}║                    ${YELLOW}SCRCPY Manager${CYAN}                            ║${NC}"
     printf "%b\n" "${CYAN}║              ${GREEN}Conecte seu Android via WiFi no Mac${CYAN}             ║${NC}"
     printf "%b\n" "${CYAN}╚══════════════════════════════════════════════════════════════╝${NC}"
     echo
@@ -1954,7 +1947,7 @@ main_menu() {
                 ;;
             0)
                 show_header
-                printf "%b\n" "${GREEN}Obrigado por usar o SCRCPY WiFi Manager!${NC}"
+                printf "%b\n" "${GREEN}Obrigado por usar o SCRCPY Manager!${NC}"
                 printf "%b\n" "${CYAN}Até logo! 👋${NC}"
                 exit 0
                 ;;
