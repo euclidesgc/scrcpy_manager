@@ -1,4 +1,4 @@
-# Documentação do Script sms.sh
+# Scrcpy Manager
 
 Este documento serve como um guia para o uso do script `sms.sh`, que tem como objetivo facilitar a conexão e o gerenciamento de dispositivos Android via scrcpy e adb.
 
