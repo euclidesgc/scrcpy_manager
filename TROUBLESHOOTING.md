@@ -99,6 +99,7 @@ sudo pfctl -s rules | grep 5555
 - Desabilite temporariamente o firewall do Mac
 - Configure roteador para permitir comunicação entre dispositivos
 - Tente rede doméstica ao invés de corporativa
+- Verifique se existe alguma VPN ativada
 
 ## 🔧 Problemas com scrcpy
 
